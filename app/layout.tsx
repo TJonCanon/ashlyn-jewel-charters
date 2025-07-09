@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Ashlyn Jewel Charters - Family Fishing Charters in Chincoteague",
   description: "Experience the best fishing charters in Chincoteague with Captain Todd. Morning, afternoon, 4-hour, and shark fishing trips available. Professional gear included.",
   keywords: "fishing charters, Chincoteague, Virginia, Captain Todd, family fishing, shark fishing, flounder, fluke",
+  icons: {
+    icon: "/just the fish.png",
+  },
 };
 
 export default function RootLayout({
