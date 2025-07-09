@@ -8,7 +8,20 @@ export const metadata: Metadata = {
   description: "Experience the best fishing charters in Chincoteague with Captain Todd. Morning, afternoon, 4-hour, and shark fishing trips available. Professional gear included.",
   keywords: "fishing charters, Chincoteague, Virginia, Captain Todd, family fishing, shark fishing, flounder, fluke",
   icons: {
-    icon: "/just the fish.png",
+    icon: [
+      {
+        url: "/just the fish.png",
+        sizes: "32x32",
+        type: "image/png",
+      },
+      {
+        url: "/just the fish.png",
+        sizes: "16x16", 
+        type: "image/png",
+      },
+    ],
+    shortcut: "/just the fish.png",
+    apple: "/just the fish.png",
   },
 };
 
