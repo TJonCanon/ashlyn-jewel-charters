@@ -23,8 +23,8 @@ export default function AboutSection() {
               <Image
                 src="/Captain_todd.png"
                 alt="Captain Todd"
-                width={280}
-                height={340}
+                width={320}
+                height={390}
                 className="rounded-2xl object-cover shadow-2xl"
               />
             </div>
@@ -35,8 +35,8 @@ export default function AboutSection() {
             <Image
               src="/Captain_todd.png"
               alt="Captain Todd"
-              width={220}
-              height={270}
+              width={280}
+              height={340}
               className="rounded-xl object-cover shadow-xl mx-auto"
             />
           </div>

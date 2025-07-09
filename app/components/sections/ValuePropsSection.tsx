@@ -15,7 +15,7 @@ const valueProps = [
   {
     icon: '/icons/captain.png',
     title: 'Expert captain',
-    description: "Captain Todd's 6 years of experience ensures a successful trip"
+    description: "Captain Todd's years of experience ensures a successful trip"
   },
   {
     icon: '/icons/fishing.png',

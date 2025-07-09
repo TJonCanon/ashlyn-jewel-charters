@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
+import { StagewiseToolbar } from "@stagewise/toolbar-next";
+import ReactPlugin from "@stagewise-plugins/react";
 
 export const metadata: Metadata = {
   title: "Ashlyn Jewel Charters - Family Fishing Charters in Chincoteague",
@@ -38,6 +40,7 @@ export default function RootLayout({
           <main>{children}</main>
           <Footer />
         </div>
+        <StagewiseToolbar config={{ plugins: [ReactPlugin] }} />
       </body>
     </html>
   );

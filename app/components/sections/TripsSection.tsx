@@ -11,7 +11,8 @@ const trips = [
     maxPeople: 6,
     image: '/Photos/Morning_Trip.jpg',
     rating: 5.0,
-    objectPosition: 'center 10%'
+    objectPosition: 'center 10%',
+    duration: '2h'
   },
   {
     id: 'afternoon',
@@ -20,7 +21,8 @@ const trips = [
     maxPeople: 6,
     image: '/Photos/Afternoon_Trip.jpg',
     rating: 5.0,
-    objectPosition: 'center 20%'
+    objectPosition: 'center 20%',
+    duration: '2h'
   },
   {
     id: 'four-hour',
@@ -29,7 +31,8 @@ const trips = [
     maxPeople: 4,
     image: '/Photos/4_Hour_Trip.jpg',
     rating: 5.0,
-    objectPosition: 'center 20%'
+    objectPosition: 'center 20%',
+    timeOptions: 'A.M. or P.M.'
   },
   {
     id: 'shark',
@@ -51,7 +54,7 @@ export default function TripsSection() {
         </h2>
       </div>
       
-      <div className="flex gap-6 overflow-x-auto scroll-smooth pb-2 justify-center">
+      <div className="flex gap-6 overflow-x-auto scroll-smooth pb-2 pl-4 pr-4">
         {trips.map((trip) => (
           <div 
             key={trip.id}
@@ -75,9 +78,21 @@ export default function TripsSection() {
             
             {/* Trip Content */}
             <div className="p-5 relative">
-              <h3 className="text-lg font-semibold text-gray-900 mb-1">
-                {trip.name}
-              </h3>
+              <div className="flex items-center gap-2 mb-1">
+                <h3 className="text-lg font-semibold text-gray-900">
+                  {trip.name}
+                </h3>
+                {trip.duration && (
+                  <span className="bg-blue-100 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">
+                    {trip.duration}
+                  </span>
+                )}
+                {trip.timeOptions && (
+                  <span className="bg-green-100 text-green-800 text-xs font-medium px-2 py-1 rounded-full">
+                    {trip.timeOptions}
+                  </span>
+                )}
+              </div>
               <p className="text-xl font-bold text-gray-900">
                 ${trip.price} <span className="text-sm font-normal text-gray-500">/up to {trip.maxPeople} people</span>
               </p>

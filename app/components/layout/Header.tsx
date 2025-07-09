@@ -63,18 +63,36 @@ export default function Header() {
           ))}
         </div>
 
-        {/* Mobile Menu Button */}
-        <button
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden absolute right-3 p-2"
-          aria-label="Toggle menu"
-        >
-          {isMenuOpen ? (
-            <XMarkIcon className="h-6 w-6 text-gray-900" />
-          ) : (
-            <Bars3Icon className="h-6 w-6 text-gray-900" />
-          )}
-        </button>
+        {/* Phone Number - Desktop */}
+        <div className="hidden md:block absolute right-3">
+          <a
+            href="tel:443-834-8443"
+            className="text-teal-600 font-semibold text-lg px-4 py-2 rounded-lg hover:bg-teal-50 transition-colors"
+          >
+            443-834-8443
+          </a>
+        </div>
+
+        {/* Mobile Phone & Menu */}
+        <div className="md:hidden absolute right-3 flex items-center gap-2">
+          <a
+            href="tel:443-834-8443"
+            className="text-teal-600 font-semibold text-sm px-2 py-1 rounded hover:bg-teal-50 transition-colors"
+          >
+            443-834-8443
+          </a>
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="p-2 z-10"
+            aria-label="Toggle menu"
+          >
+            {isMenuOpen ? (
+              <XMarkIcon className="h-6 w-6 text-gray-900" />
+            ) : (
+              <Bars3Icon className="h-6 w-6 text-gray-900" />
+            )}
+          </button>
+        </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
@@ -102,6 +120,15 @@ export default function Header() {
                   </button>
                 )
               ))}
+              
+              {/* Phone Number - Mobile */}
+              <a
+                href="tel:443-834-8443"
+                className="text-teal-600 font-semibold text-lg px-4 py-2 rounded-lg hover:bg-teal-50 transition-colors text-left"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Call: 443-834-8443
+              </a>
             </div>
           </div>
         )}
