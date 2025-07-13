@@ -162,10 +162,8 @@ This project is private and proprietary to Ashlyn Jewel Charters.
 
 ## Contact
 
-Captain Todd - Ashlyn Jewel Charters
-- Website: [Book on FishingBooker](https://fishingbooker.com/charters/view/41107)
-- Location: Chincoteague, Virginia
+Taylor Joyner
+- Website: github.com/TJonCanon
+- Email taylor.joyner93@me.com
 
 ---
-
-Built with ❤️ for the fishing community of Chincoteague
